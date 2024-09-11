@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Javascript CRUD</title>
+</head>
+<body onload="readAll()">
+    <div class="container flex justify-center items-center h-screen">
+        <div class="form_container">
+            <form action="" class="create_form mb-[10px] hidden">
+                <input type="text" class="name border border-black">
+                <input type="email" class="email border border-black">
+                <button type="button" class="border px-[10px] rounded-lg bg-[#4F7942]" onclick="Add()">Create</button>
+            </form>
+            <form action="" class="update_form hidden">
+                <input type="text" class="id hidden"/>
+             <input type="text" class="uname border border-black ">
+             <input type="email" class="uemail border border-black">
+             <button type="button" class="border px-[10px] rounded-lg bg-[#4F7942]" onclick="update()">Update</button>
+            </form>
+            <div class="add_div">
+                <button class="bg-[#4F7942] mt-[10px] rounded px-[10px]" onclick="create()">Add +</button>
+            </div>
+
+            <table class="mt-[10px]">
+            <thead>
+                <tr class="border ">
+                    <th class=" border w-[150px]">Name</th>
+                    <th class="border w-[150px]">Email</th>
+                    <th class="border w-[150px]">Action</th>
+                </tr>
+            </thead>  
+            <tbody class="data-table border">
+     <!-- <tr></tr> -->
+            </tbody>          
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
